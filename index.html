@@ -1,71 +1,51 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8" />
-    <title>pagina</title>
-  </head>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nombre de la Empresa</title>
+</head>
+<body style="font-family: Arial, Helvetica, sans-serif;margin: 0;padding: 6;">
 
-  <body style="margin: 0; background-color: aliceblue">
-    <table width="100%" border="0">
-      <tbody>
-        <tr>
-          <td height="69">
-            <header style="background-color: #747e7a">
-              <table width="100%" height="100%" border="0">
-                <tbody>
-                  <tr>
-                    <td width="18%" height="33"><h1>Empresa </h1></td>
-                    <td width="82%">
-                      <div align="right">
-                        <a href="index.html"
-                          ><input type="button" value="Inicio"
-                        /></a>
-                        <a href="html/empresa.html"
-                          ><input type="button" value="Empresa"
-                        /></a>
-                        <a href="html/productos.html"
-                          ><input type="button" value="Productos"
-                        /></a>
-                        <a href="html/contactos.html"
-                          ><input type="button" value="Contactos"
-                        /></a>
-                        <a href="html/sistema.html"
-                          ><input type="button" value="Sistema"
-                        /></a>
-                      </div>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-            </header>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <main>
-              <p>&nbsp;</p>
-              <p>&nbsp;</p>
-              <p>&nbsp;</p>
-              <h1>Todo el form</h1>
-              <p>&nbsp;</p>
-              <p>&nbsp;</p>
-              <p>&nbsp;</p>
-              <p>&nbsp;</p>
-            </main>
-          </td>
-        </tr>
-        <tr>
-          <td style="background-color: #151515; color: azure">
-            <footer>
-              <h3 align="center">&nbsp;</h3>
-              <p>&nbsp;</p>
-              <h3 align="center">footer</h3>
-              <p>&nbsp;</p>
-              <p>&nbsp;</p>
-            </footer>
-          </td>
-        </tr>
-      </tbody>
+  <header style="background-color: #333;color: #fff;padding: 10px;text-align: right;">
+    <nav  style="display: inline-block;">
+      <a style="color: #fff;text-decoration: none;margin-left: 20px;" href="inicio.html">Inicio</a>
+      <a style="color: #fff;text-decoration: none;margin-left: 20px;" href="empresa.html">Empresa</a>
+      <a style="color: #fff;text-decoration: none;margin-left: 20px;" href="productos.html">Productos</a>
+      <a style="color: #fff;text-decoration: none;margin-left: 20px;" href="contactos.html">Contactos</a>
+    </nav>
+  </header>
+
+  <main style="padding: 20px;text-align: center;">
+    <h1>San Pedro</h1>
+    <table style="border: 2px solid #333;padding: 20px;text-align: right;margin: auto;">
+      <tr>
+        <td>
+          <img src="/Proyecto_web/img/imgEmpresa.png" alt="Imagen de la Empresa" width="400">
+        </td>
+        <td>
+          <div>
+            <fieldset style="border: 2px solid #333;padding: 20px;text-align: center; width: 600;">
+              <legend>Iniciar</legend>
+              <form action="procesar_login.php" method="post" style="display: flex; flex-direction: column; align-items: center; max-width: 300px; width: 100%;">
+                <label for="username" style="margin-bottom: 8px;">Usuario:</label>
+                <input type="text" id="username" name="username" required style="width: 100%; padding: 8px; margin-bottom: 16px; box-sizing: border-box;">
+                <label for="password" style="margin-bottom: 8px;">Contraseña:</label>
+                <input type="password" id="password" name="password" required style="width: 100%; padding: 8px; margin-bottom: 16px; box-sizing: border-box;">
+                <input type="submit" value="Iniciar sesión"  style="background-color: #333; color: #fff; cursor: pointer;">
+                <br>
+                <input type="reset" value="Limpiar"  style="background-color: #333; color: #fff; cursor: pointer;">
+              </form>
+            </fieldset>
+          </div>
+        </td>
+      </tr>
     </table>
-  </body>
+  </main>
+
+  <footer style="background-color: #333;color: #fff;text-align: center;padding: 10px;position: fixed;bottom: 0;width: 100%;">
+    <p>&copy; 2023 San Pedro. Todos los derechos reservados.</p>
+  </footer>
+
+</body>
 </html>
