@@ -8,12 +8,8 @@
 <body style="font-family: Arial, Helvetica, sans-serif;margin: 0;padding: 6;">
 
   <header style="background-color: #333;color: #fff;padding: 10px;text-align: right;">
-    <nav  style="display: inline-block;">
-      <a style="color: #fff;text-decoration: none;margin-left: 20px;" href="inicio.html">Inicio</a>
-      <a style="color: #fff;text-decoration: none;margin-left: 20px;" href="/html/empresa.html">Empresa</a>
-      <a style="color: #fff;text-decoration: none;margin-left: 20px;" href="/html/productos.html">Productos</a>
-      <a style="color: #fff;text-decoration: none;margin-left: 20px;" href="contactos">Contactos</a>
-    </nav>
+    <br>
+    <br>
   </header>
 
   <main style="padding: 20px;text-align: center;">
@@ -21,20 +17,20 @@
     <table style="border: 2px solid #333;padding: 20px;text-align: right;margin: auto;">
       <tr>
         <td>
-          <img src="/Proyecto_web/img/imgEmpresa.png" alt="Imagen de la Empresa" width="400">
+          <img src="img/imgEmpresa.png" alt="Imagen de la Empresa" width="400">
         </td>
         <td>
           <div>
             <fieldset style="border: 2px solid #333;padding: 20px;text-align: center; width: 600;">
               <legend>Iniciar</legend>
-              <form action="procesar_login.php" method="post" style="display: flex; flex-direction: column; align-items: center; max-width: 300px; width: 100%;">
+              <form action="html/empresa.html" method="post" style="display: flex; flex-direction: column; align-items: center; max-width: 300px; width: 100%;">
                 <label for="username" style="margin-bottom: 8px;">Usuario:</label>
                 <input type="text" id="username" name="username" required style="width: 100%; padding: 8px; margin-bottom: 16px; box-sizing: border-box;">
                 <label for="password" style="margin-bottom: 8px;">Contraseña:</label>
                 <input type="password" id="password" name="password" required style="width: 100%; padding: 8px; margin-bottom: 16px; box-sizing: border-box;">
                 <input type="submit" value="Iniciar sesión"  style="background-color: #333; color: #fff; cursor: pointer;">
                 <br>
-                <input type="reset" value="Limpiar"  style="background-color: #333; color: #fff; cursor: pointer;">
+                <input type="reset" value="Limpiar" formaction="/Proyecto_web/html/empresa.html" style="background-color: #333; color: #fff; cursor: pointer;">
               </form>
             </fieldset>
           </div>
